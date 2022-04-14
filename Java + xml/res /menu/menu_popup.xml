@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pending"
+        android:id="@+id/item_pending"/>
+
+    <item android:title="Ready"
+        android:id="@+id/item_ready"/>
+
+    <item android:title="Collected"
+        android:id="@+id/item_collected"/>
+</menu>
+
