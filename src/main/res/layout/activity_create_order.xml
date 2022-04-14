@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateOrder"
+    android:background="@drawable/grad4">
+
+    <TextView
+        android:id="@+id/textViewAddOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/editTextCustomerUserName"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:hint="Customer username: "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddOrder"
+        app:layout_constraintVertical_bias="0.052" />
+
+
+    <Button
+        android:id="@+id/buttonLogOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="LOG ORDER!"
+        app:backgroundTint="@color/material_on_background_emphasis_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmpCode"
+        app:layout_constraintVertical_bias="0.311"
+        android:background="@drawable/trans_btn"/>
+
+    <TextView
+        android:id="@+id/textViewEmpCode"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRestaurant"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCustomerUserName"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/textViewRestaurant"
+        android:layout_width="232dp"
+        android:layout_height="46dp"
+        android:textSize="18dp"
+        android:hint="Restaurant will appear here: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateTime"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TextView
+        android:id="@+id/staffRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/trans_btn"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
